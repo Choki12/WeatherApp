@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PDFsharp" Version="1.50.5147" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0-rc.2.23479.6" />
   </ItemGroup>
 
