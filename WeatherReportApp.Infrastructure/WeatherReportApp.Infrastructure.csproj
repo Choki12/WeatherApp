@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{640CF5F6-AE76-487B-9361-8185F8021D47}</ProjectGuid>
+    <ProjectGuid>{9B9251E2-CDD7-435A-BF2B-3B15AA369749}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WeatherReportApp.Core</RootNamespace>
-    <AssemblyName>WeatherReportApp.Core</AssemblyName>
+    <RootNamespace>WeatherReportApp.Infrastructure</RootNamespace>
+    <AssemblyName>WeatherReportApp.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -36,6 +36,9 @@
     </Reference>
     <Reference Include="Microsoft.Extensions.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.7.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -68,16 +71,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Interfaces\IWeatherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeatherData.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
+    <Compile Include="Services\WeatherService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Configuration\App.Configuration.csproj">
+      <Project>{124b34ff-28f9-4373-95ee-ae86025fe89e}</Project>
+      <Name>App.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherReportApp.Core\WeatherReportApp.Core.csproj">
+      <Project>{640cf5f6-ae76-487b-9361-8185f8021d47}</Project>
+      <Name>WeatherReportApp.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

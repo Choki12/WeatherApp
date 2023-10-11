@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherReportApp.Core
+namespace App.Configuration
 {
-    public interface IWeatherService
+    public interface IConfigurationService
     {
-        Task<WeatherData> GetWeatherData(string cityName);
+        string Get(string key);
     }
+
 }

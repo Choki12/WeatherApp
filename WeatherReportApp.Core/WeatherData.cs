@@ -8,6 +8,7 @@ namespace WeatherReportApp.Core
 {
     public class WeatherData
     {
-        //define specific properties 
+        public string CityName { get; set; }
+        public double Temperature { get; set; }
     }
 }
