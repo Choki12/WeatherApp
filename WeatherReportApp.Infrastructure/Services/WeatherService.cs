@@ -23,7 +23,7 @@ namespace WeatherReportApp.Infrastructure.Services
             httpClient = new HttpClient();
         }
 
-        //We implememnt 
+        
         public async Task<WeatherData> GetWeatherData(string cityName)
         {
             var response = await httpClient.GetStringAsync($"{BaseUrl}?access_key={ApiKey}&query={cityName}");
