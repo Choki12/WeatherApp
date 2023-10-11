@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,8 @@ namespace WeatherReportApp.Core
         public int Temperature { get; set; }
         public int WeatherCode { get; set; }
         public List<string> WeatherIcons { get; set; }
+
+        [JsonProperty("weather_descriptions")]
         public List<string> WeatherDescriptions { get; set; }
         public int Windspeed { get; set; }
         public int Pressure { get; set; }
