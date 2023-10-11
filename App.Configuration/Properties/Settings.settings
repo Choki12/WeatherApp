@@ -2,11 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="App.Configuration.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="WeatherStackBaseUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://api.weatherstack.com/current</Value>
-    </Setting>
     <Setting Name="WeatherStackApiKey" Type="System.String" Scope="Application">
       <Value Profile="(Default)">21ea53f6d2bfaac66bd53062f96910f8</Value>
+    </Setting>
+    <Setting Name="WeatherStackBaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://api.weatherstack.com/current</Value>
     </Setting>
   </Settings>
 </SettingsFile>

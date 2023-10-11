@@ -25,19 +25,19 @@ namespace App.Configuration.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://api.weatherstack.com/current")]
-        public string WeatherStackBaseUrl {
+        [global::System.Configuration.DefaultSettingValueAttribute("21ea53f6d2bfaac66bd53062f96910f8")]
+        public string WeatherStackApiKey {
             get {
-                return ((string)(this["WeatherStackBaseUrl"]));
+                return ((string)(this["WeatherStackApiKey"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("21ea53f6d2bfaac66bd53062f96910f8")]
-        public string WeatherStackApiKey {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://api.weatherstack.com/current")]
+        public string WeatherStackBaseUrl {
             get {
-                return ((string)(this["WeatherStackApiKey"]));
+                return ((string)(this["WeatherStackBaseUrl"]));
             }
         }
     }
