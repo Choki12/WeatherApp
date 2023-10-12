@@ -11,9 +11,10 @@ This is a .NET Core Console App that fetches current weather data from the Weath
 ## Getting Started 🚀
 
 **Clone the repository:**
-
-```bash
-git clone [your-repository-link]
+```bash```
+https: git clone [https://github.com/Choki12/WeatherApp.git]
+```bash```
+SSH: git clone [git@github.com:Choki12/WeatherApp.git]
 
 ## Set WeatherReportApp as the startup project
 
