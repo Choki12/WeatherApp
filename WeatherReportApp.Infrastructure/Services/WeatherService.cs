@@ -18,9 +18,14 @@ namespace WeatherReportApp.Infrastructure.Services
         private readonly string ApiKey = Settings.Default.WeatherStackApiKey;
         private readonly HttpClient httpClient;
 
+
         public WeatherService()
         {
             httpClient = new HttpClient();
+        }
+        public WeatherService(HttpClient httpClient)
+        {
+             this.httpClient = httpClient?? throw new ArgumentNullException(nameof(httpClient)); //null coalescing to ensure non-null value is passed to httpClient and throw exception if constraints are violated
         }
 
         

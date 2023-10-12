@@ -1,0 +1,7 @@
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\bin\Debug\App.Configuration.dll.config
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\bin\Debug\App.Configuration.dll
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\bin\Debug\App.Configuration.pdb
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\obj\Debug\App.Configuration.csproj.AssemblyReference.cache
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\obj\Debug\App.Configuration.csproj.CoreCompileInputs.cache
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\obj\Debug\App.Configuration.dll
+C:\Projects\Weather\WeatherAnalysisApp\App.Configuration\obj\Debug\App.Configuration.pdb
